@@ -21,22 +21,22 @@
             8) 돌려 받는 최대값 또는 최소값 출력
 '''
 
-import random as r
+import random as r # 랜덤 난수 생성
 
-def maxmin(choose, list):
-    if choose == "min" :
-        result = min(list)
-    elif choose == "max" :
-        result = max(list)
-    else :
-        return
-    return result
+def maxmin(choose, list): # 두 개의 매개 변수 생성
+    if choose == "min" : # min을 입력 받으면 최소값 출력
+        result = min(list) # 결과값에 최소값 저장
+    elif choose == "max" : # max을 입력 받으면 최대값 출력
+        result = max(list) # 결과값에 최대값 저장
+    else : # 아니면 None 출력
+        return 
+    return result # 결과값을 돌려줌
 
-while(1):
-    randomlist = []
-    for i in range(1, 11):
-        randomlist.append(r.randint(10,99))
-    print(randomlist)
-    choose=input("최대값을 원하면 'max', 최소값을 원하면 'min' 을 입력하세요(그 외는 None 출력함) : ")
-    print(maxmin(choose, randomlist))
+while(1): # 무한 반복
+    randomlist = [] # 리스트 초기화
+    for i in range(1, 11): # 10번 반복
+        randomlist.append(r.randint(10,99)) # 리스트에 1개씩 난수 저장
+    print(randomlist) # 리스트 출력
+    choose=input("최대값을 원하면 'max', 최소값을 원하면 'min' 을 입력하세요(그 외는 None 출력함) : ") # min 또는 max를 입력받음
+    print(maxmin(choose, randomlist)) # 결과값 출력
     
