@@ -52,7 +52,7 @@ print("class : ",person_dict['calss'])
 print()
 print(":: 정렬 ::")
 # phone_book3를 정렬
-print(sorted(phone_book3)) # key를 기준으로 정렬하여 리스트로 반환\
+print(sorted(phone_book3)) # key를 기준으로 정렬하여 리스트로 반환
     
 print()
 print(":: 키를 기준으로 전체 정렬 ::")
